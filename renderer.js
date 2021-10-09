@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("comments").appendChild(newComment);
         // 입력한 요소를 지우기
         commentInput["value"] = "";
-        return false;
+        return false; // 항상 false, 그래야 데이터가 넘어가지 않고 화면에 있다.
     }
 });

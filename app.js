@@ -1,6 +1,6 @@
 "use strict"
 
-const { app, BrowserWindow} = require("electron");
+const { app, BrowserWindow } = require("electron");
 
 let win;
 function createWindow(){
@@ -11,7 +11,6 @@ function createWindow(){
 
 app.on("ready", createWindow);
 app.on("window-all-closed", () => {
-    console.log(process.platform);
     // darwin  => in mac
     if(process.platform !== "darwin"){
         app.quit();
